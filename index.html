@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Taiyaba Fatima</title>
 
-    <!-- Google Font (customization example) -->
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -13,61 +13,59 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="portfolio.css">
 </head>
+
 <body>
 
-    <!-- ===== NAVBAR / HEADER ===== -->
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">TF</div>
+<!-- ===== NAVBAR / HEADER ===== -->
+<header class="site-header">
+    <div class="container">
+        <div class="logo">TF</div>
 
-            <nav class="main-nav">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#github">GitHub</a>
-    <a href="#contact">Contact</a>
-</nav>
+        <nav class="main-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#github">GitHub</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
 
-        </div>
-    </header>
-
-    <!-- ===== HOME SECTION ===== -->
-    <section id="home" class="section home-section">
-        <div class="container home-layout">
-            <div>
-                <h1>Hello, I’m <span class="accent">Taiyaba Fatima</span></h1>
-                <p class="tagline">
-                    An aspiring web & IT professional building projects with HTML, CSS, JavaScript,
-                    and strong technical support experience.
-                </p>
-                <a class="btn-primary" href="#github">View My Projects</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== ABOUT SECTION ===== -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                I have over four years of experience in IT Desktop Support and System Administration,
-                and I’m currently expanding my skills in web development. I enjoy creating clean,
-                responsive websites and solving technical problems.
+<!-- ===== HOME SECTION ===== -->
+<section id="home" class="section home-section">
+    <div class="container home-layout">
+        <div>
+            <h1>Hello, I’m <span class="accent">Taiyaba Fatima</span></h1>
+            <p class="tagline">
+                An aspiring web & IT professional building projects with HTML, CSS, JavaScript,
+                and strong technical support experience.
             </p>
-            <p>
-                My background includes working with tools like Active Directory, DNS, DHCP,
-                Google Workspace, and front-end technologies such as HTML and CSS.
-                I’m passionate about continuous learning and building a strong portfolio of projects.
-            </p>
+            <a class="btn-primary" href="#github">View My Projects</a>
         </div>
-    </section>
+    </div>
+</section>
 
-   <!-- ===== GITHUB SECTION ===== -->
+<!-- ===== ABOUT SECTION ===== -->
+<section id="about" class="section">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+            I have over four years of experience in IT Desktop Support and System Administration,
+            and I’m currently expanding my skills in web development. I enjoy creating clean,
+            responsive websites and solving technical problems.
+        </p>
+        <p>
+            My background includes working with tools like Active Directory, DNS, DHCP,
+            Google Workspace, and front-end technologies such as HTML and CSS.
+            I’m passionate about continuous learning and building a strong portfolio of projects.
+        </p>
+    </div>
+</section>
+
+<!-- ===== GITHUB SECTION ===== -->
 <section id="github" class="section section-alt">
     <div class="container">
         <h2>GitHub Projects</h2>
-        <p>
-            Here are a few sample repositories that represent my learning and projects.
-        </p>
+        <p>Here are a few sample repositories that represent my learning and projects.</p>
 
         <ul class="project-list">
             <li>
@@ -77,17 +75,19 @@
                     View on GitHub
                 </a>
             </li>
+
             <li>
                 <h3>JavaScript Basics</h3>
                 <p>Small apps and exercises to strengthen my understanding of JavaScript fundamentals.</p>
-                <a href="https://github.com/your-username/javascript-basics" target="_blank">
+                <a href="https://github.com/taiyabafali01/javascript-projects" target="_blank">
                     View on GitHub
                 </a>
             </li>
+
             <li>
                 <h3>Portfolio Website</h3>
-                <p>This very portfolio, built from scratch using HTML and CSS.</p>
-                <a href="https://github.com/your-username/portfolio-website" target="_blank">
+                <p>This portfolio website, built and published using GitHub Pages.</p>
+                <a href="https://github.com/taiyabafali01/my-portfolio" target="_blank">
                     View on GitHub
                 </a>
             </li>
@@ -102,35 +102,32 @@
         <p>If you’d like to reach out about projects, opportunities, or questions, feel free to send me a message.</p>
 
         <form class="contact-form" action="https://formspree.io/f/mpwbapwo" method="POST">
-            
-            <!-- Name -->
             <label for="name">Name</label>
             <input id="name" type="text" name="name" required>
 
-            <!-- Email -->
             <label for="email">Email</label>
             <input id="email" type="email" name="_replyto" required>
 
-            <!-- Message -->
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
-            <!-- Submit -->
             <button type="submit" class="btn-primary">Send Message</button>
         </form>
     </div>
 </section>
 
-    <!-- ===== FOOTER ===== -->
-    <footer class="site-footer">
-        <div class="container">
-            <p>© <span id="year"></span> Taiyaba Fatima · Portfolio</p>
-        </div>
-    </footer>
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+    <div class="container">
+        <p>© <span id="year"></span> Taiyaba Fatima · Portfolio</p>
+    </div>
+</footer>
 
-    <!-- Simple script to auto-update year -->
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+<!-- Back to top button -->
+<button id="backToTop" aria-label="Back to top" type="button">↑</button>
+
+<!-- JavaScript -->
+<script src="main.js"></script>
+
 </body>
 </html>
