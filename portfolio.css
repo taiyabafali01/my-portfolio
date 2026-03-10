@@ -224,3 +224,21 @@ body {
 .contact-form button.btn-primary {
     margin-top: 0.25rem;
 }
+/* ===== BACK TO TOP BUTTON ===== */
+#backToTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.55rem 0.75rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    display: none;
+}
+
+#backToTop:hover {
+    background: var(--accent-dark);
+}
